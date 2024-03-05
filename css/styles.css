@@ -1,0 +1,496 @@
+/*Fuentes*/
+/*Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Kanit&family=Montserrat:wght@100;300&family=Poppins:ital,wght@1,100&display=swap');
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Kanit&family=Montserrat:wght@100;300&family=Poppins:wght@100;300&display=swap');
+/*Kanit*/
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Kanit:wght@100;200;300&family=Montserrat:wght@100;300&family=Poppins:wght@100;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cont {
+    width: 100vw;
+    padding: 2.4vh;
+    color: #ffffff;
+    background-image: url(./../images/topography.svg);
+    background-color: #100420;
+}
+
+/*Header*/
+header {
+    height: 10vh;
+    padding: 0 1.25%;
+}
+nav,nav div,.pageIcon a,.iconNav {
+    height: 100%;
+}
+.cont-fluid {
+    padding: 0;
+}
+.pageIcon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.pageIcon h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+.cont-fluid button:focus {
+    box-shadow: none;
+}
+.menu {
+    flex-grow: 0;
+}
+.nav-link {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #666666;
+}
+li .activo {
+    color: #000000;
+}
+
+/*Footer*/
+footer {
+    padding: 1.25%;
+    height: 10vh;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footNav {
+    height: 100%;
+    width: 15.8%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+.footNav li a {
+    height: 1.29vh;
+}
+.footNav li a img {
+    height: 36px;
+}
+footer p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.13rem;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+
+/*Main Index*/
+#index {
+    background-image: url(./../images/fondoIndex.jpg);
+    background-position: center;
+    height: 130vh;
+    padding: 88px 30px;
+    color: #ffffff;
+    background-size: cover;
+}
+#index p {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#index h2 {
+    font-size: 3.75rem;
+    margin-top: 80px;
+}
+#index h2, #index p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Main Nosotros*/
+#nosotros {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-areas: 
+    "img1 text1"
+    "text2 text2"
+    "text3 text3"
+    "contImg contImg";
+}
+#imgNos {
+    width: 100%;
+    grid-area: img1;
+}
+#textNos {
+    text-align: center;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.65rem;
+    grid-area: text1;
+    text-align: center;
+    align-self: center;
+    padding: 0 15px;  
+    margin-bottom: 0;
+}
+#nosotros #epigrafe {
+    color: #a07bc2;
+    text-align: left;
+    width: fit-content;
+    font-size: 1rem;
+    grid-area: text2;
+}
+#nosotros h2 {
+    font-family: 'Kranit', sans-serif;
+    font-size: 2rem;
+    margin: 8px 0 15px 0;
+    grid-area: text3;
+}
+#nosotros #listImgs {
+    width: 100%;
+    grid-area: contImg;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+#listImgs img {
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+}
+
+
+/*Main Prod*/
+#products {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Filtro de Productos*/
+#contFltrs {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 25%;
+    width: 20%;
+}
+#contBuscProd {
+    width: 19.3vw;
+}
+#contBuscProd form {
+    background-color: #ffffff;
+    border-radius: 4px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+#inpSearch {
+    width: 87%;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    background-color: #00000000;
+}
+.searchIcon {
+    background-color: #ffffff00;
+    background-image: url(./../images/icons/buscar.png);
+    border: none;
+    padding: 4px;
+    height: 90%;
+    width: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#menOps {
+    width: 19.3vw;
+}
+form select {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20vh 0 9.5vh 0;
+}
+#precio {
+    width: 100%;
+    margin-top: 16px;
+}
+label {
+    font-size: 1.59rem;
+    font-family: 'Poppins', sans-serif;
+}
+.inpSbmt {
+    margin-top: 10%;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Listado de productos*/
+#prodsCont {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 78%;
+    gap: 12px 18px;
+    justify-items: center;
+}
+.prodItem {
+    width: 22.93vw;
+    background-color: #85858542;
+    border-radius: 5px;
+    padding: 5px;
+}
+.prodImg img {
+    width: 100%;
+    height: 71.19vh;
+    object-fit: cover;
+    object-position: center;
+}
+.prodDesc a, .prodDesc p {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+.prodDesc a {
+    text-decoration: none;
+    font-size: 30px;
+}
+.prodDesc p {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+}
+
+
+/*Main Soporte*/
+#soporte{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#soporte h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+#soporte h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 35px 0 15px 0;
+}
+#contImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#contImg img {
+    width: 27.79%;
+}
+#contBuscSopor {
+    display: flex;
+    justify-content: center;
+}
+#contBuscSopor form {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+#plhdSearch {
+    background-color: #00000000;
+    width: 44vw;
+    font-size: 1.25rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 40px;
+    padding: 5px;
+    border: none;
+}
+#outSopor {
+    text-align: center;
+    color: #a07bc2;
+    font-size: 1.05rem;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 51.03px;
+}
+
+
+/*Main Contacto*/
+#contact {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+#contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+#whatsContact, #numContact {
+    width: fit-content;
+    background-color: #f3d6ff23;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+#whatsContact h3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 3.5rem;
+}
+#whatsContact a img {
+    height: 100px;
+}
+#whatsContact p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+}
+#numContact h3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+#numContact p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 3.56%;
+}
+#numContact h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.95rem;
+    margin-bottom: 1.94vh;
+}
+
+/*Formulario*/
+#contact h2 {
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 2.55%;
+}
+#contForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#contactForm form {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, auto);
+    align-items: center;
+    justify-items: center;
+    gap: 14px 0;
+}
+#contactForm form input , #textContact, #contact form button {
+    width: 24.9vw;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 6px;
+    border: none;
+    border-radius: 2.75px;
+}
+#contactForm form input {
+    height: 5.17vh;
+}
+#contact form button {
+    width: 16.63%;
+}
+#textContact {
+    resize: vertical;
+    width: 65%;
+}
+
+
+@media screen and (max-width: 1024px) {
+    /*Header*/
+    .menu {
+        position: absolute;
+        top: 10vh;
+        left: 2.4%;
+        height: auto;
+        background-color: #9149ccf1;
+        width: 95%;
+        border-radius: 0 0 18px 18px;
+    }
+    .nav-link {
+        color: #bdbdbd;
+    }
+    li .activo {
+        color: #ffffff;
+    }
+    
+
+    /*Nosotros*/
+    #nosotros {
+        grid-template-columns: 1fr 1fr;
+    }
+    #textNos {
+        padding: 0 12px;
+        font-size: 1.25rem;
+    }
+    #nosotros #epigrafe {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    #nosotros #listImgs {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    /*Footer*/
+    footer {
+        flex-direction: column-reverse;
+        height: auto;
+        gap: 10px;
+    }
+    footer p {
+        font-size: 1.25rem;
+    }
+    .footNav {
+        width: 40%;
+    }
+
+
+    /*Index*/
+    #index {
+        height: 90vh;
+    }
+    #index p {
+        font-size: 2rem;
+    }
+    #index h2 {
+        font-size: 3.2;
+    }
+
+
+    /*Nosotros*/
+    #nosotros {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "img1"
+        "text2"
+        "text1"
+        "text3"
+        "contImg";
+    }
+    #nosotros #epigrafe {
+        font-size: 0.78rem;
+    }
+    #nosotros h2 {
+        font-size: 1.68rem;
+    }
+    #nosotros #listImgs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
