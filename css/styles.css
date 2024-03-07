@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 .cont {
-    width: 100vw;
+    width: 100%;
     padding: 2.4vh;
     color: #ffffff;
     background-image: url(./../images/topography.svg);
@@ -444,6 +444,22 @@ label {
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
     }
+
+
+    /*Productos*/
+    #contFltrs {
+        width: 30%;
+    }
+    #contBuscProd, #inpSearch, #menOps {
+        width: 95%;
+    }
+    #prodsCont {
+        grid-template-columns: repeat(2, 1fr);
+        width: 70%;
+    }
+    .prodItem {
+        width: 100%;
+    }
 }
 
 
@@ -465,12 +481,13 @@ label {
     /*Index*/
     #index {
         height: 90vh;
+        padding: 15% 4.5%;
     }
     #index p {
         font-size: 2rem;
     }
     #index h2 {
-        font-size: 3.2;
+        font-size: 3rem;
     }
 
 
@@ -486,11 +503,39 @@ label {
     }
     #nosotros #epigrafe {
         font-size: 0.78rem;
+        margin-bottom: 10px;
     }
     #nosotros h2 {
-        font-size: 1.68rem;
+        margin: 5% 0 1.25% 0;
+        font-size: 2rem;
     }
     #nosotros #listImgs {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /*Productos*/
+    /*Filtros*/
+    #products {
+        flex-direction: column;
+        gap: 15px;
+    }
+    #contFltrs, #contBuscProd, #inpSearch, #menOps {
+        width: 100%;
+    }
+    #menOps form label {
+        font-size: 1.25rem;
+    }
+    #sector {
+        margin: 5% 0 3% 0;
+    }
+    .inpSbmt {
+        display: block;
+    }
+
+    /*Productos*/
+    #prodsCont {
+        width: 100%;
+        grid-template-columns: 100%;
     }
 }
