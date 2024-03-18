@@ -1,0 +1,256 @@
+// Media Query (1024px)
+@media screen and (max-width: 1024px) {
+    //Header
+    header {
+        nav {
+            .cont-fluid {
+                .menu {                   
+                    position: absolute;
+                    top: 10vh;
+                    left: 2.4%;
+                    height: auto;
+                    background-color: #9149ccf1;
+                    width: 95%;
+                    border-radius: 0 0 18px 18px;
+                    ul {
+                        li {
+                            .nav-link {
+                                color: #bdbdbd;
+                            }
+                            .activo {
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Nosotros
+    #nosotros {
+        grid-template-columns: repeat(2, 1fr);
+        #textNos {
+            padding: 0 12px;
+            font-size: 1.25rem;
+        }
+        #epigrafe {
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+        #listImgs {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    // Productos
+    #products {
+        gap: 15px;
+        #contFltrs {
+            width: 30%;
+        }
+        #prodsCont{
+            grid-template-columns: repeat(2, 1fr);
+            width: 70%;
+            .prodItem {
+                width: 100%;
+            }
+        }
+    }
+
+    // Soporte
+    #soporte {
+        padding: 0 15px;
+        #contImg {
+            img {
+                width: 31%;
+            }
+        }
+    }
+
+    //Contacto
+    #contact {
+        #contForm {
+            h2 {
+                font-size: 3.5rem;
+            }
+            #contactForm {
+                form {
+                    #textContact {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+        #contactInfo {
+            #whatsContact {
+                h3 {
+                    font-size: 2.75rem;
+                }
+            }
+            #numContact {
+                h3 {
+                    font-size: 2.89rem;
+                }
+                p {
+                    font-size: 1.06rem;
+                }
+                h4 {
+                    font-size: 1.75rem;
+                }
+            }
+        }
+    }
+}
+
+
+// Media Query (768px)
+@media screen and (max-width: 768px) {
+    // Index
+    #index {
+        height: 90vh;
+        padding: 15% 4.5%;
+        p {
+            font-size: 2rem;
+            @include animate(ttlMain, 1.5s, ease-in-out, normal);
+        }
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+    // Nosotros
+    #nosotros {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "img1"
+        "text2"
+        "text1"
+        "text3"
+        "contImg";
+        #epigrafe {
+            font-size: 0.78rem;
+            margin-bottom: 10px;
+        }
+        h2 {
+            margin: 5% 0 1.25% 0;
+            font-size: 2rem;
+        }
+        #listImgs {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    // Productos
+    #products {
+        flex-direction: column;
+        #contFltrs {
+            width: 100%;
+            #contBuscProd {
+                form {
+                    #inpSearch {
+                        width: 100%;
+                    }
+                }
+            }
+            #menOps {
+                width: 100%;
+                form {
+                    width: 100%;
+                    label {
+                        font-size: 1.25rem;
+                    }
+                    #sector {
+                        margin: 5% 0 3% 0;
+                    }
+                }
+            }
+        }
+        #prodsCont {
+            width: 100%;
+            grid-template-columns: 100%;
+        }
+    }
+
+    //Soporte
+    #soporte {
+        padding: 15px 10px;
+        height: auto;
+        h2 {
+            position: absolute;
+            top: 53vh;
+            @include animate(ttlMain, 2s, ease-in-out, normal);
+        }
+        #contImg {
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 80%;
+            }
+        }
+        h3 {
+            font-size: 3rem;
+        }
+        #contBuscSopor {
+            form {
+                width: 80%;
+                #plhdSearch {
+                    width: 100%;
+                }
+            }
+        }
+        #outSopor {
+            margin-top: 35px;
+        }
+    }
+
+    //Contact
+    #contact {
+        grid-template-columns: 100%;
+        gap: 25px;
+        #contForm {
+            h2 {
+                font-size: 4rem;
+            }
+        }
+        #contactInfo {
+            width: 100%;
+            #whatsContact {
+                width: 80%;
+                h3 {
+                    font-size: 3.5rem;
+                }
+                p {
+                    margin-top: 15px;
+                    font-size: 1.6rem;
+                }
+            }
+            #numContact {
+                width: 90%;
+                h3 {
+                    font-size: 3.45rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+                h4 {
+                    font-size: 1.95rem;
+                }
+            }
+        }
+    }
+
+    //Footer
+    footer {
+        flex-direction: column-reverse;
+        height: auto;
+        gap: 10px;
+        p {
+            font-size: 1.25rem;
+        }
+        .footNav {
+            width: 40%;
+        }
+    }
+
+}

@@ -1,0 +1,48 @@
+/* Nosotros */
+#nosotros {
+    @include grid(1fr 1.5fr, left, center);
+    width: 100%;
+    grid-template-areas: 
+    "img1 text1"
+    "text2 text2"
+    "text3 text3"
+    "contImg contImg";
+    #imgNos {
+        width: 100%;
+        grid-area: img1;
+    }
+    #textNos {
+        width: 100%;
+        font-family: nth($list: $fonts, $n: 2);
+        font-size: 1.65rem;
+        grid-area: text1;
+        text-align: center;
+        padding: 0 15px;  
+        margin-bottom: 0;
+    }
+    #epigrafe {
+        color: #a07bc2;
+        text-align: left;
+        width: fit-content;
+        font-size: 1rem;
+        grid-area: text2;
+    }
+    h2 {
+        font-family: nth($list: $fonts, $n: 3);
+        font-size: 2rem;
+        margin: 8px 0 15px 0;
+        grid-area: text3;
+    }
+    #listImgs {
+        width: 100%;
+        grid-area: contImg;
+        @include grid(repeat(6, 1fr), center, top);
+        gap: 10px;
+        img {
+            width: 100%;
+            height: 95%;
+            object-fit: cover;
+        }
+    }
+
+}

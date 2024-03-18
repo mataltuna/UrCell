@@ -1,0 +1,38 @@
+//Search
+%plhdSearch {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    background-color: #00000000;
+}
+%btnSearch {
+    background-color: #ffffff00;
+    background-image: url(./../images/icons/buscar.png);
+    border: none;
+    padding: 4px;
+    height: 90%;
+    width: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+//Contact Cards
+%contactCard{
+    width: fit-content;
+    background-color: #f3d6ff23;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+//Contact Form
+%contactForm {
+    width: 24.9vw;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 6px;
+    border: none;
+    border-radius: 2.75px;
+}

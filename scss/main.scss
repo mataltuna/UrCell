@@ -1,0 +1,28 @@
+@import "./utilities/reset";
+@import "./utilities/globals";
+
+//Utilities
+@import "./utilities/animations";
+@import "./utilities/variables";
+@import "./utilities/extend";
+@import "./utilities/mixin";
+
+//Header
+@import "./components/header";
+
+// Main Index
+@import "./pages/main-index";
+// Main Nosotros
+@import "./pages/main-nos";
+// Main Productos
+@import "./pages/main-prod";
+// Main Soporte
+@import "./pages/main-sopor";
+// Main Contacto
+@import "./pages/main-contact";
+
+//Footer
+@import "./components/footer";
+
+//Media Querys
+@import "./utilities/media-queries";

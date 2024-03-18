@@ -1,0 +1,41 @@
+/*Header*/
+header {
+    height: 10vh;
+    padding: 0 1.25%;
+    nav {
+        height: 100%;
+        .cont-fluid {
+            padding: 0;
+            height: 100%;
+            .pageIcon {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                a {
+                    height: 100%;
+                    .iconNav {
+                        height: 100%;
+                    }
+                }
+                h1 {
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-size: 2.5rem;
+                    margin-bottom: 0;
+                }
+            }
+            button:focus {
+                box-shadow: none;
+            }
+            .menu {
+                flex-grow: 0;
+                li {
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    color: #757575;
+                    .activo {
+                        color: #120022;
+                    }    
+                }
+            }
+        }
+    }
+}

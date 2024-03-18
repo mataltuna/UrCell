@@ -1,0 +1,71 @@
+#contact {
+    @include grid(1.5fr 1fr, center, center);
+    //Form
+    h2 {
+        font-size: 4rem;
+        font-family: nth($list: $fonts, $n: 2);
+        text-align: center;
+        margin-bottom: 2.55%;
+    }
+    #contForm {
+        width: 100%;
+        @include flex(column, center, center);
+        form {
+            text-align: center;
+            @include grid(auto, center, center);
+            gap: 14px 0;
+            input {
+                @extend %contactForm;
+                height: 5.17vh;
+            }
+            #textContact {
+                @extend %contactForm;
+                resize: vertical;
+                width: 65%;
+            }
+            #inpSbmt {
+                @extend %contactForm;
+                width: 16.63%;
+            }
+        }
+    }
+    //Contact Cards
+    #contactInfo{
+        @include flex(column, center, center);
+        align-items: center;
+        #whatsContact {
+            @extend %contactCard;
+            h3 {
+                font-family: nth($list: $fonts, $n: 3);
+                font-size: 3.5rem;
+            }
+            a {
+                img {
+                    height: 100px;
+                }
+            }
+            p {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 1.6rem;
+            }
+        }
+        #numContact {
+            @extend %contactCard;
+            h3 {
+                font-family: nth($list: $fonts, $n: 3);
+                font-size: 3rem;
+                margin-bottom: 16px;
+            }
+            p {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 1.2rem;
+                margin-bottom: 3.56%;
+            }
+            h4 {
+                font-family: nth($list: $fonts, $n: 1);
+                font-size: 1.95rem;
+                margin-bottom: 1.94vh;
+            }
+        }
+    }
+}

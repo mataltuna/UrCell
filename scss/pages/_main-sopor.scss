@@ -1,0 +1,47 @@
+#soporte {
+    @include flex(column, center, center);
+    height: 80vh;
+    h2 {
+        font-family: nth($list: $fonts, $n: 1);
+        font-size: 3rem;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+    h3 {
+        font-family: nth($list: $fonts, $n: 2);
+        font-size: 2rem;
+        text-align: center;
+        margin: 35px 0 15px 0;
+    }
+    #contImg {
+        width: 100%;
+        @include flex(row, center, center);
+        img {
+            width: 28.734%;
+        }
+    }
+    #contBuscSopor {
+        @include flex(row, center, center);
+        form {
+            background-color: #ffffff;
+            @include flex(row, center, center);
+            align-items: center;
+            border-radius: 4px;
+            #plhdSearch {
+                @extend %plhdSearch;
+                width: 44vw;
+                font-size: 1.25rem;
+            }
+            #searchIconSopor {
+                @extend %btnSearch;
+            }
+        }
+    }
+    #outSopor {
+        text-align: center;
+        color: #a07bc2;
+        font-size: 1.05rem;
+        font-family: nth($list: $fonts, $n: 3);
+        margin-top: 51.03px;
+    }
+}

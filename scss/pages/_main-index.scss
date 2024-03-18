@@ -1,0 +1,18 @@
+/* Main Index */
+#index {
+    background-image: url(./../images/fondoIndex.jpg);
+    background-position: center;
+    height: 130vh;
+    padding: 88px 30px;
+    color: #ffffff;
+    background-size: cover;
+    font-family: nth($list: $fonts, $n: 1);
+    h2 {
+        font-size: 3.75rem;
+        margin-top: 80px;
+    }
+    p {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+}

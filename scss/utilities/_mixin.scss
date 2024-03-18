@@ -1,0 +1,23 @@
+//Grid Mixin
+@mixin grid($grid-col, $grid-jst, $grid-alg,){
+    display: grid;
+    grid-template-columns: $grid-col;
+    justify-items: $grid-jst;
+    align-items: $grid-alg;
+}
+
+//Flex Mixin
+@mixin flex($flex-dir, $flex-jst, $flex-alg){
+    display: flex;
+    flex-direction: $flex-dir;
+    justify-content: $flex-jst;
+    align-content: $flex-alg;
+}
+
+//Animation
+@mixin animate($anim-name, $anim-dur, $anim-time, $anim-dir){
+    animation-name: $anim-name;
+    animation-duration: $anim-dur;
+    animation-timing-function: $anim-time;
+    animation-direction: $anim-dir;
+}
