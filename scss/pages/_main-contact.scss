@@ -26,6 +26,9 @@
             #inpSbmt {
                 @extend %contactForm;
                 width: 16.63%;
+                &:hover {
+                    animation: btnForm 0.1s ease-in-out;
+                }
             }
         }
     }

@@ -27,12 +27,12 @@
     from {
         border-radius: 0;
         color: #000000;
-        background-color: #eec8ff;
+        background-color: nth($list: $colorBtn, $n: 2);
     }
     to {
         border-radius:0 8px 0 8px;
         color: #ffffff;
-        background-color: #3e0064;
+        background-color: nth($list: $colorBtn, $n: 1);
     }
 }
 
