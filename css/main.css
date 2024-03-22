@@ -270,7 +270,7 @@ header nav .cont-fluid .menu li a:hover {
 }
 #products #contFltrs #menOps form .inpSbmt:hover {
   color: #ffffff;
-  background-color: #eec8ff;
+  background-color: #3e0064;
   border-radius: 0 8px 0 8px;
   animation: btnForm 0.18s ease-in-out normal;
 }
