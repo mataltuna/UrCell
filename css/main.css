@@ -32,9 +32,11 @@
 @keyframes ttlMain {
   from {
     top: 100vh;
+    opacity: 0;
   }
   to {
     top: 45vh;
+    opacity: 1;
   }
 }
 @keyframes btnForm {
@@ -601,7 +603,8 @@ footer .footNav a img:hover {
   #soporte h2 {
     position: absolute;
     top: 45vh;
-    animation: ttlMain 1.4s ease-in-out 0.5s 1 normal;
+    opacity: 1;
+    animation: ttlMain 1.11s ease-in-out 1 normal;
   }
   #soporte #contImg {
     flex-direction: column;

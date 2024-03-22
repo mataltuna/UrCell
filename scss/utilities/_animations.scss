@@ -16,9 +16,11 @@
 @keyframes ttlMain {
     from {
         top: 100vh;
+        opacity: 0;
     }
     to {
         top: 45vh;
+        opacity: 1;
     }
 }
 
