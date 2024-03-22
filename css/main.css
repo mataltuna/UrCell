@@ -400,7 +400,10 @@ header nav .cont-fluid .menu li a:hover {
   width: 16.63%;
 }
 #contact #contForm form #inpSbmt:hover {
-  animation: btnForm 0.1s ease-in-out normal;
+  border-radius: 0 8px 0 8px;
+  color: #ffffff;
+  background-color: #3e0064;
+  animation: btnForm 0.1s ease-in-out 1 normal;
 }
 #contact #contactInfo {
   display: flex;
