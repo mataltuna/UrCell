@@ -1,9 +1,9 @@
-/* Error: Undefined variable.
+/* Error: $n: Invalid index 2 for a list with 1 elements.
  *    ,
- * 30 |         background-color: nth($list: $colorBtn, $n: 2);
- *    |                                      ^^^^^^^^^
+ * 30 |         background-color: nth($list: colorBtn, $n: 2);
+ *    |                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
  *    '
- *   scss\utilities\_animations.scss 30:38  @import
+ *   scss\utilities\_animations.scss 30:27  @import
  *   scss\main.scss 5:9                     root stylesheet */
 
 body::before {
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 30 \2502          background-color: nth($list: $colorBtn, $n: 2);\d\a    \2502                                       ^^^^^^^^^\a    \2575 \a   scss\\utilities\\_animations.scss 30:38  @import\a   scss\\main.scss 5:9                     root stylesheet";
+  content: "Error: $n: Invalid index 2 for a list with 1 elements.\a    \2577 \a 30 \2502          background-color: nth($list: colorBtn, $n: 2);\d\a    \2502                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\utilities\\_animations.scss 30:27  @import\a   scss\\main.scss 5:9                     root stylesheet";
 }
