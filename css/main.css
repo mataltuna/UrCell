@@ -17,12 +17,44 @@
   background-color: #100420;
 }
 
+@keyframes navHover {
+  from {
+    color: #757575;
+    border-bottom: 0px solid #757575;
+    text-shadow: #ab39f3 2px 2px;
+  }
+  to {
+    border-bottom: 2.5px solid #ab39f3;
+    color: #ab39f3;
+    text-shadow: 0 0 11px #ab39f3;
+  }
+}
 @keyframes ttlMain {
-  0% {
+  from {
     top: 100vh;
   }
-  100% {
-    top: 53vh;
+  to {
+    top: 45vh;
+  }
+}
+@keyframes btnForm {
+  from {
+    border-radius: 0;
+    color: #000000;
+    background-color: #eec8ff;
+  }
+  to {
+    border-radius: 0 8px 0 8px;
+    color: #ffffff;
+    background-color: #3e0064;
+  }
+}
+@keyframes footNavHover {
+  from {
+    height: 36px;
+  }
+  to {
+    height: 40px;
   }
 }
 #soporte #contBuscSopor form #plhdSearch, #products #contFltrs #contBuscProd form #inpSearch {
@@ -97,12 +129,18 @@ header nav .cont-fluid button:focus {
 header nav .cont-fluid .menu {
   flex-grow: 0;
 }
-header nav .cont-fluid .menu li {
+header nav .cont-fluid .menu li .activo {
+  color: #08000a;
+}
+header nav .cont-fluid .menu li a {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #757575;
 }
-header nav .cont-fluid .menu li .activo {
-  color: #120022;
+header nav .cont-fluid .menu li a:hover {
+  border-bottom: 2.5px solid #ab39f3;
+  text-shadow: 0 0 11px #ab39f3;
+  color: #ab39f3;
+  animation: navHover ease-in-out 0.05s normal;
 }
 
 /* Main Index */
@@ -221,9 +259,18 @@ header nav .cont-fluid .menu li .activo {
 }
 #products #contFltrs #menOps form .inpSbmt {
   margin-top: 10%;
-  padding: 0.3rem;
+  padding: 0.6rem;
+  box-sizing: border-box;
   font-size: 1.2rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eec8ff;
+  border: none;
+}
+#products #contFltrs #menOps form .inpSbmt:hover {
+  color: #ffffff;
+  background-color: #3e0064;
+  border-radius: 0 8px 0 8px;
+  animation: btnForm 0.18s ease-in-out normal;
 }
 #products #prodsCont {
   width: auto;
@@ -417,6 +464,10 @@ footer .footNav a {
 footer .footNav a img {
   height: 36px;
 }
+footer .footNav a img:hover {
+  height: 40px;
+  animation: footNavHover 0.12s ease-in-out alternate;
+}
 
 @media screen and (max-width: 1024px) {
   header nav .cont-fluid .menu {
@@ -493,10 +544,6 @@ footer .footNav a img {
   }
   #index p {
     font-size: 2rem;
-    animation-name: ttlMain;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in-out;
-    animation-direction: normal;
   }
   #index h2 {
     font-size: 3rem;
@@ -547,11 +594,8 @@ footer .footNav a img {
   }
   #soporte h2 {
     position: absolute;
-    top: 53vh;
-    animation-name: ttlMain;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-direction: normal;
+    top: 45vh;
+    animation: ttlMain 1.4s ease-in-out 0.5s 1 normal;
   }
   #soporte #contImg {
     flex-direction: column;

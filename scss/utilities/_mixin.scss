@@ -13,11 +13,3 @@
     justify-content: $flex-jst;
     align-content: $flex-alg;
 }
-
-//Animation
-@mixin animate($anim-name, $anim-dur, $anim-time, $anim-dir){
-    animation-name: $anim-name;
-    animation-duration: $anim-dur;
-    animation-timing-function: $anim-time;
-    animation-direction: $anim-dir;
-}

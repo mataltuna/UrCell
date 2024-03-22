@@ -43,9 +43,18 @@
                 }
                 .inpSbmt {
                     margin-top: 10%;
-                    padding: 0.3rem;
+                    padding: 0.6rem;
+                    box-sizing: border-box;
                     font-size: 1.2rem;
-                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    background-color: #eec8ff;
+                    border: none;
+                    &:hover {
+                        color: #ffffff;
+                        background-color: #3e0064;
+                        border-radius:0 8px 0 8px;
+                        animation: btnForm 0.18s ease-in-out normal;
+                    }
                 }
             }
         }

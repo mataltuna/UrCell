@@ -112,7 +112,6 @@
         padding: 15% 4.5%;
         p {
             font-size: 2rem;
-            @include animate(ttlMain, 1.5s, ease-in-out, normal);
         }
         h2 {
             font-size: 3rem;
@@ -178,8 +177,8 @@
         height: auto;
         h2 {
             position: absolute;
-            top: 53vh;
-            @include animate(ttlMain, 2s, ease-in-out, normal);
+            top: 45vh;
+            animation: ttlMain 1.4s ease-in-out 0.5s 1 normal;
         }
         #contImg {
             flex-direction: column;

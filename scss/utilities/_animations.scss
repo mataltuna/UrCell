@@ -1,8 +1,47 @@
+//Header
+@keyframes navHover {
+    from {
+        color: #757575;
+        border-bottom: 0px solid #757575;
+        text-shadow: #ab39f3 2px 2px;
+    }
+    to {
+        border-bottom: 2.5px solid #ab39f3;
+        color: #ab39f3;
+        text-shadow: 0 0 11px #ab39f3;
+    }
+}
+
+//Main
 @keyframes ttlMain {
-    0% {
+    from {
         top: 100vh;
     }
-    100% {
-        top: 53vh;
+    to {
+        top: 45vh;
+    }
+}
+
+//Products
+@keyframes btnForm {
+    from {
+        border-radius: 0;
+        color: #000000;
+        background-color: #eec8ff;
+    }
+    to {
+        border-radius:0 8px 0 8px;
+        color: #ffffff;
+        background-color: #3e0064;
+    }
+}
+
+//Footer
+@keyframes footNavHover {
+    from {
+        height: 36px;
+    }
+    to {
+        height: 40px;
     }
 }

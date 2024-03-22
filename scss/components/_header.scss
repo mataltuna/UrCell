@@ -29,11 +29,20 @@ header {
             .menu {
                 flex-grow: 0;
                 li {
-                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                    color: #757575;
+                    
                     .activo {
-                        color: #120022;
-                    }    
+                        color: #08000a;
+                    }
+                    a {
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        color: #757575;
+                        &:hover {
+                            border-bottom: 2.5px solid #ab39f3;
+                            text-shadow: 0 0 11px #ab39f3;
+                            color: #ab39f3;
+                            animation: navHover ease-in-out 0.05s normal;
+                        }
+                    }
                 }
             }
         }

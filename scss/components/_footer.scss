@@ -25,6 +25,10 @@ footer {
             height: 1.29vh;
             img {
                 height: 36px;
+                &:hover {
+                    height: 40px;
+                    animation: footNavHover 0.12s ease-in-out alternate;
+                }
             }
         }
     }
