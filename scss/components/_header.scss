@@ -35,11 +35,11 @@ header {
                     }
                     a {
                         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                        color: #757575;
+                        color: nth($list: $navHovColor, $n: 1);
                         &:hover {
-                            border-bottom: 2.5px solid #ab39f3;
-                            text-shadow: 0 0 11px #ab39f3;
-                            color: #ab39f3;
+                            border-bottom: 2.5px solid nth($list: $navHovColor, $n: 2);
+                            text-shadow: 0 0 11px nth($list: $navHovColor, $n: 2);
+                            color: nth($list: $navHovColor, $n: 2);
                             animation: navHover ease-in-out 0.05s normal;
                         }
                     }

@@ -1,14 +1,14 @@
 //Header
 @keyframes navHover {
     from {
-        color: #757575;
-        border-bottom: 0px solid #757575;
-        text-shadow: #ab39f3 2px 2px;
+        color: nth($list: $navHovColor, $n: 1);
+        border-bottom: none ;
+        text-shadow: nth($list: $navHovColor, $n: 2) 2px 2px;
     }
     to {
-        border-bottom: 2.5px solid #ab39f3;
-        color: #ab39f3;
-        text-shadow: 0 0 11px #ab39f3;
+        border-bottom: 2.5px solid nth($list: $navHovColor, $n: 2);
+        color: nth($list: $navHovColor, $n: 2);
+        text-shadow: 0 0 11px nth($list: $navHovColor, $n: 2);
     }
 }
 
