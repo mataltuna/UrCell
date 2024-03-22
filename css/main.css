@@ -466,7 +466,7 @@ footer .footNav a img {
 }
 footer .footNav a img:hover {
   height: 40px;
-  animation: footNavHover 0.12s ease-in-out alternate;
+  animation: footNavHover 0.1s ease-in-out alternate;
 }
 
 @media screen and (max-width: 1024px) {
