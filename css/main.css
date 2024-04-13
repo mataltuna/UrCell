@@ -630,7 +630,16 @@ footer .footNav a img:hover {
     gap: 25px;
   }
   #contact #contForm h2 {
-    font-size: 4rem;
+    font-size: 3.25rem;
+  }
+  #contact #contForm #contactForm form input {
+    width: 60%;
+  }
+  #contact #contForm #contactForm form #textContact {
+    width: 85%;
+  }
+  #contact #contForm #contactForm form #inpSbmt {
+    width: 40%;
   }
   #contact #contactInfo {
     width: 100%;

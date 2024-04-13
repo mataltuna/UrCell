@@ -210,7 +210,20 @@
         gap: 25px;
         #contForm {
             h2 {
-                font-size: 4rem;
+                font-size: 3.25rem;
+            }
+            #contactForm {
+                form {
+                    input {
+                        width: 60%;
+                    }
+                    #textContact {
+                        width: 85%;
+                    }
+                    #inpSbmt {
+                        width: 40%;
+                    }
+                }
             }
         }
         #contactInfo {
